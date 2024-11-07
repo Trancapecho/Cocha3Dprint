@@ -1,50 +1,73 @@
+---
+import { Image } from 'astro:assets'
+import Tesla3d from '../assets/images/logos/3Dtesla-logo.png'
+import Cba from '../assets/images/logos/CBA-logo.png'
+import AmSpaces from '../assets/images/logos/amSpaces-logo.png'
+import Ardunel from '../assets/images/logos/ardunel-logo.png'
+import Sawers from '../assets/images/logos/sawers-logo.png'
+import Jawars from '../assets/images/logos/jawars-logo.png'
+import Tesla from '../assets/images/logos/tesla-logo.png'
+---
 
-
-<section class="pb-16 grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-24 lg:gap-x-20 xl:gap-x-56">
-  <div class="grid mb-10 md:mb-0">
-    <h2 class="text-xl font-bold text-[#0762D9] md:text-2xl lg:text-3xl">Organizan :</h2>
-    <hr class="border border-solid border-[#0762D9] w-full md:mt-2 md:mb-1 mt-3 mb-4 lg:mt-4 lg:mb-4 " />
-    <div class=" grid grid-cols-4 gap-4 items-center md:grid-cols-4 lg:grid-cols-4">  
-      <img
-        class="h-12 md:h-16 lg:h-20 max-w-full object-contain"
-        src="/src/assets/logos/jawars-logo.png"
-        alt="jawars"
+<section
+  class="grid grid-cols-1 gap-x-8 pb-16 md:grid-cols-2 md:gap-x-24 lg:gap-x-20 xl:gap-x-56"
+>
+  <div class="mb-10 grid md:mb-0">
+    <h2 class="text-xl font-bold text-[#0762D9] md:text-2xl lg:text-3xl">
+      Organizan :
+    </h2>
+    <hr
+      class="mb-4 mt-3 w-full border border-solid border-[#0762D9] md:mb-1 md:mt-2 lg:mb-4 lg:mt-4"
+    />
+    <div
+      class="grid grid-cols-4 items-center gap-4 md:grid-cols-4 lg:grid-cols-4"
+    >
+      <Image
+        class="h-12 max-w-full object-contain md:h-16 lg:h-20"
+        src={Jawars}
+        alt="Jawars"
       />
-      <img
-        class="h-10 md:h-8 lg:h-16 max-w-full object-contain"
-        src="/src/assets/logos/CBA-logo.png"
+      <Image
+        class="h-10 max-w-full object-contain md:h-8 lg:h-16"
+        src={Cba}
         alt="CBA"
       />
-      <img
-        class="h-12 md:h-14 md:w-96 max-w-full col-span-2 sm:col-span-2 object-contain "
-        src="/src/assets/logos/amSpaces-logo.png"
-        alt="AmericanSpaces"
+      <Image
+        class="col-span-2 h-12 max-w-full object-contain sm:col-span-2 md:h-14 md:w-96"
+        src={AmSpaces}
+        alt="American spaces"
       />
     </div>
-  </div>  
-  <div class="grid mt-2 md:mt-0">
-    <h2 class="text-xl font-bold text-[#0762D9] md:text-2xl lg:text-3xl">Patrocinadores :</h2>
-    <hr class="border border-solid border-[#0762D9] w-full mt-3 mb-4 md:mt-2 md:mb-1 lg:mt-4 lg:mb-4" />
-    <div class="grid grid-cols-5 gap-x-4 items-center md:grid-cols-5 lg:grid-cols-5">
-      <img
-        class="h-12 md:h-16 lg:h-20 max-w-full object-contain"
-        src="/src/assets/logos/tesla-logo.png"
-        alt="tesla"
+  </div>
+  <div class="mt-2 grid md:mt-0">
+    <h2 class="text-xl font-bold text-[#0762D9] md:text-2xl lg:text-3xl">
+      Patrocinadores :
+    </h2>
+    <hr
+      class="mb-4 mt-3 w-full border border-solid border-[#0762D9] md:mb-1 md:mt-2 lg:mb-4 lg:mt-4"
+    />
+    <div
+      class="grid grid-cols-5 items-center gap-x-4 md:grid-cols-5 lg:grid-cols-5"
+    >
+      <Image
+        class="h-12 max-w-full object-contain md:h-16 lg:h-20"
+        src={Tesla}
+        alt="Tesla"
       />
-      <img
-        class="h-10 md:h-14 lg:h-16 max-w-full object-contain"
-        src="/src/assets/logos/3Dtesla-logo.png"
-        alt="3Dtesla"
+      <Image
+        class="h-10 max-w-full object-contain md:h-14 lg:h-16"
+        src={Tesla3d}
+        alt="Tesla 3D"
       />
-      <img
-        class="h-10 w-36 md:h-14 lg:h-16 md:w-40 lg:w-80 max-w-full object-contain col-span-2 md:col-span-2 lg:col-span-2"
-        src="/src/assets/logos/awers-logo.png"
-        alt="awers"
+      <Image
+        class="col-span-2 h-10 w-36 max-w-full object-contain md:col-span-2 md:h-14 md:w-40 lg:col-span-2 lg:h-16 lg:w-80"
+        src={Sawers}
+        alt="Sawers"
       />
-      <img
-        class="h-10 md:h-14 lg:h-20 max-w-full object-contain"
-        src="/src/assets/logos/ardunel-logo.png"
-        alt="ardunel"
+      <Image
+        class="h-10 max-w-full object-contain md:h-14 lg:h-20"
+        src={Ardunel}
+        alt="Ardunel"
       />
     </div>
   </div>
